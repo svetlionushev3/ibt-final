@@ -1,0 +1,562 @@
+body.Menu {
+    background-color: #f4f6f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-container {
+    background-color: #2c3e50;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+.main-container h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #ecf0f1;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.button,
+input[type="submit"] {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    background-color: #00b4d8; 
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: block;
+}
+
+.button:hover,
+input[type="submit"]:hover {
+    background-color: #0077b6;
+    transform: scale(1.05);
+}
+
+#buttonBack1 {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto 0 auto;
+    background-color: #d80000; 
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: block;
+}
+
+#buttonBack1:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+.logout-btn {
+    background-color: #e74c3c !important;
+}
+
+.logout-btn:hover {
+    background-color: #c0392b !important;
+}
+
+body.add_patient {
+    background-color: #f4f6f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.center {
+    width: 100%;
+    max-width: 700px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+}
+
+.form-container {
+    width: 100%;
+}
+
+.add_patient h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #2c3e50;
+}
+
+.txt_fieldl {
+    margin-bottom: 20px;
+}
+
+.txt_fieldl label {
+    font-weight: 600;
+    color: #34495e;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    transition: 0.3s;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #00b4d8;
+    background-color: #fff;
+}
+
+
+button {
+    width: 100%;
+    background-color: #00b4d8;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0077b6;
+    transform: scale(1.03);
+}
+
+
+body .view_and_delete_patient {
+    background-color: #f4f6f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 160px;   
+    padding: 40px;
+}
+
+
+h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;  
+    margin: 20px 0;    
+}
+
+
+table {
+    width: 100%;
+    min-width: 1000px;  
+    border-collapse: collapse;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 0 auto; }
+
+
+th, td {
+    padding: 12px 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+
+#buttonBack {
+    position: absolute;  
+    top: 20px;  
+    left: 20px; 
+    background-color: #e74c3c; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    width: auto; 
+    z-index: 10; 
+}
+
+#buttonBack:hover {
+    background-color: #c0392b; 
+    transform: scale(1.05);
+}
+
+
+
+
+body.signup-page {
+    background-color: #f4f6f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  
+    margin: 0;
+    padding: 0;
+}
+
+.signup-page .center {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+    margin-top: 60px;  
+}
+
+
+.signup-page h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+
+.signup-page .txt_fieldl {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-page label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.signup-page input[type="text"],
+.signup-page input[type="password"] {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.signup-page input[type="submit"] {
+    background-color: #00b4d8;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.signup-page input[type="submit"]:hover {
+    background-color: #0077b6;
+}
+
+
+.signup-page .signup_link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.signup-page .signup_link a {
+    color: #0077b6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-page .signup_link a:hover {
+    text-decoration: underline;
+}
+
+
+.error-message {
+    color: #e74c3c;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+
+body.labresult {
+    background-color: #f4f6f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+body.login-doctor {
+    background-color: #f4f6f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  
+    margin: 0;
+    padding: 0;
+}
+
+
+.login-doctor .center {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+    margin-top: 60px;  
+}
+
+
+.login-doctor h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+
+.login-doctor .txt_field {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-doctor label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.login-doctor input[type="text"],
+.login-doctor input[type="password"] {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.login-doctor input[type="submit"] {
+    background-color: #00b4d8;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.login-doctor input[type="submit"]:hover {
+    background-color: #0077b6;
+}
+
+
+.login-doctor .signup_link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.login-doctor .signup_link a {
+    color: #0077b6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-doctor .signup_link a:hover {
+    text-decoration: underline;
+}
+
+
+body.login-patient {
+    background-color: #f4f6f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  
+    margin: 0;
+    padding: 0;
+}
+
+
+.login-patient .center {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+
+.login-patient h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+
+.login-patient .txt_field {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-patient label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.login-patient input[type="text"] {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.login-patient input[type="submit"] {
+    background-color: #00b4d8;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.login-patient input[type="submit"]:hover {
+    background-color: #0077b6;
+}
+
+
+.login-patient .signup_link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.login-patient .signup_link a {
+    color: #0077b6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-patient .signup_link a:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    background-color: #f44336; 
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.logout-button2 {
+    position: absolute; 
+    top: 20px;  
+    left: 20px; 
+    background-color: #e74c3c; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    width: auto; 
+    z-index: 10; 
+}
+
+#logout-button2:hover {
+    background-color: #c0392b; 
+    transform: scale(1.05);
+}
+
