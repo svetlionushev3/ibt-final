@@ -42,16 +42,7 @@
 			<th>Delete</th>
 		</tr>
 
-		<?php 
-		while ($row = pg_fetch_row($rs)) {
-			echo "<tr>";
-			for ($i = 0; $i < count($row); $i++) {
-				echo "<td>$row[$i]</td>";
-			}
-			echo "<td><a href='delete.php?egn=$row[0]'>Delete</a></td>";
-			echo "</tr>";
-		}
-		?>
+		
 	</table>
 </body>   
 </html>
